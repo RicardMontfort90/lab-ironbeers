@@ -5,3 +5,145 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100vh; */
+    overflow: scroll;
+}
+a {
+    text-decoration: none;
+    color: 	#ffffff;
+}
+
+/* Layout */
+.nav-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #2081c3;
+    display: flex;
+    align-items: center;
+}
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-left: 30px;
+}
+
+.nav-bar li a:hover {
+    transform: scale(50);
+}
+
+.nav-bar li a:hover{
+    color: #f9f50d;
+}
+footer {
+    width: 100%;
+    height: 5%;
+    background-color: #0a2c42;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+footer p {
+    margin-left: 30px;
+}
+
+/* Home Page */
+#home {
+    height: 50%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#home img {
+    width: 300px;
+    height: auto;
+}
+.btn-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-container a {
+    height: 40px;
+    background-color: hsl(191, 78%, 47%);
+    border: 1px solid #e91616;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    transform: scale(1.2);
+  }
+
+/* Beers Page */
+.beers-container {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.beer-partial {
+    width: 27%;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 0 20px 30px 20px;
+    border-bottom: 1px solid #997157;
+    display: flex;
+    gap: 20px;
+}
+.beer-partial img {
+    height: 100px;
+    width: auto;
+}
+.beer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.beer-info h2 {
+    font-size: 2rem;
+}
+.beer-info p {
+    line-height: 1.5;
+}
+
+/* Random Beer */
+#random-beer {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#random-beer img {
+    height: 400px;
+}
+#random-beer p {
+    width: 50%;
+}
+#random-beer .beer-partial {
+    width: 60%;
+}
+#random-beer .beer-partial .beer-info{
+    align-items: center;
+}
+.random-info {
+    width: 80%;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #000859;
+}
